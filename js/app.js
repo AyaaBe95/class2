@@ -4,7 +4,7 @@ var userInput = prompt("Enter your name")
 alert("Welcome "+ userInput+ " to my gusseing game")
 //console.log(userInput)
 
-var userInput1 = prompt("How are you feeling today? "+userInput); 
+var userInput1 = prompt("How are you feeling today? "+ userInput); 
  
 switch (userInput1) { 
     
@@ -63,8 +63,7 @@ else{
 }
 //console.log(userInput6)
 
-var userInput7 = confirm("DONE,Have a nice day!); 
- console.log(userInput7);
+var userInput7 = confirm("DONE,Have a nice day!");
  if(userInput7){
      alert('Bye :)');
  } else {
