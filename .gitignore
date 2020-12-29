@@ -4,6 +4,12 @@
 # Logs
 logs
 *.log
+<<<<<<< HEAD
+=======
+
+# Optional eslint cache
+.eslintcache
+>>>>>>> a3ab50784ecbd85b282343849796754aaa151ebf
 
 # Optional eslint cache
 .eslintcache
