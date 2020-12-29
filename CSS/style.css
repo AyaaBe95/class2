@@ -10,7 +10,25 @@ border: 5px solid wheat;
 
 }
 
+h2 {
+    background-color: rgb(214, 236, 10);
+    color: rgb(2, 61, 10);
+    font-size: 30px;
+    border: 3px solid wheat;
+    
+    }
+
 ul {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    margin-left: 30px;
+    box-sizing: content-box;
+    border-radius: 3px;
+}
+
+
+ol {
     margin-top: 30px;
     margin-bottom: 30px;
     margin-right: 30px;
