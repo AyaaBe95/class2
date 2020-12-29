@@ -2,7 +2,6 @@
 
 var userInput = prompt("Enter your name")
 alert("Welcome " + userInput + " to my gusseing game")
-//console.log(userInput)
 
 
 

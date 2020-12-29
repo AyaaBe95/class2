@@ -23,15 +23,10 @@ ul {
     margin-bottom: 30px;
     margin-right: 30px;
     margin-left: 30px;
-<<<<<<< HEAD
     box-sizing: content-box;
     list-style-type: square;
 
-=======
-    list-style-type: square;
-
     
->>>>>>> 5c5c80033671982ec6cc2c3eb9b17b1f850b6a1a
 }
 
 
@@ -41,10 +36,9 @@ ol {
     margin-right: 30px;
     margin-left: 30px;
     box-sizing: content-box;
-<<<<<<< HEAD
     list-style: decimal;
 
-=======
+
 }
 
 
@@ -53,11 +47,3 @@ li {
   text-align: left;
 }
 
-ol {
-  list-style: decimal;
->>>>>>> 5c5c80033671982ec6cc2c3eb9b17b1f850b6a1a
-}
-li {
-    padding: 20px;
-    text-align: left;
-  }
