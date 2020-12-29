@@ -2,21 +2,18 @@
 
 var userInput = prompt("Enter your name")
 alert("Welcome " + userInput + " to my gusseing game")
-<<<<<<< HEAD
 //console.log(userInput)
 
 var userInput1 = prompt("How are you feeling today? " + userInput);
 
 switch (userInput1) {
 
-=======
 
 
 var userInput1 = prompt("How are you feeling today? " + userInput);
 
 switch (userInput1) {
 
->>>>>>> a3ab50784ecbd85b282343849796754aaa151ebf
     case 'good':
     case 'great':
     case 'fine':
@@ -85,10 +82,6 @@ function thirdQuestion() {
 
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> a3ab50784ecbd85b282343849796754aaa151ebf
 thirdQuestion();
 
 function forthQuestion() {
@@ -135,7 +128,7 @@ function sixthQuestion() {
     var correctAnswer = 11;
     var userScore = 0;
     for (let i = 0; i < 4; i++) {
-        var userInput7 = parseInt(prompt('Try to guess a number from 1 to 20: you have 4 attempts '));
+        var userInput7 = parseInt(prompt('Try to guess a number between 1-20: you have 4 attempts '));
         if (userInput7 > correctAnswer) {
 
             alert('Too High');
@@ -143,7 +136,7 @@ function sixthQuestion() {
 
             alert('Too low');
         } else if (userInput7 == correctAnswer) {
-<<<<<<< HEAD
+
 
             alert("That's Correct");
             userScore += 1;
@@ -151,50 +144,39 @@ function sixthQuestion() {
         }
     }
 
-=======
-
-            alert("That's Correct");
-            userScore += 1;
-            break;
-        }
-    }
-
->>>>>>> a3ab50784ecbd85b282343849796754aaa151ebf
     alert('The correct answer is: ' + correctAnswer);
     return userScore;
 }
+        
 sixthQuestion();
 
 function seventhQuestion() {
-    var userScore = 0;
-    var correctAnswer = [25, 30, 60, 70, 13, 18, 98, 78, 35, 47];
-    for (let i = 0; i < 6; i++) {
-        var userInput8 = parseInt(prompt('Try to guess a number from 0 to 100,you have only 6 attempts'));
-
-        for (let j = 0; j < correctAnswer.length; j++) {
-<<<<<<< HEAD
-            if (userInput8 == correctAns[j]) {
-=======
-            if (userInput8 == correctAnswer[j]) {
->>>>>>> a3ab50784ecbd85b282343849796754aaa151ebf
-                
-                alert("That's  Correct");
-                userScore += 1;
-            }
-        }
+  var userScore = 0;
+  var correctAns = [99, 85, 81, 73, 100, 30, 36, 74, 11, 62];
+  for (let i = 0; i < 6; i++){
+    var userGuess = parseInt(prompt('Try to guess a number from 0 to 100: you have 6 attempts'));
+    for (let j = 0; j < correctAns.length; j++){
+      if (userGuess === correctAns[j]){
+        
+        alert('That is Correct');
+        userScore += 1;
+        break;
+      }
     }
-
-    alert('The correct answers are: ' + correctAnswer);
-    return userScore;
-
+    if (userScore >= 1){
+      break;
+    }
+  }
+  alert('The correct answers are: ' + correctAns);
+  return userScore;
 }
+        
+ seventhQuestion();
+       
+        
 alert('you final score is: ' + (firstQuestion() + secondQuestion() + thirdQuestion() + forthQuestion() + fifthQuestion() + sixthQuestion() + seventhQuestion()));
 
-<<<<<<< HEAD
 
-seventhQuestion();
-=======
-seventhQuestion();
 
 var userInput9 = confirm("DONE,Have a nice day!");
  if(userInput9){
@@ -202,5 +184,4 @@ var userInput9 = confirm("DONE,Have a nice day!");
  } else {
      alert('ok ');
  }
->>>>>>> a3ab50784ecbd85b282343849796754aaa151ebf
 
