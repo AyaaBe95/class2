@@ -4,7 +4,7 @@ var userInput = prompt("Enter your name")
 alert("Welcome " + userInput + " to my gusseing game")
 //console.log(userInput)
 
-var userInput1 = prompt("How are you feeling today? " + userInput);
+
 
 
 switch (userInput1) {
@@ -123,7 +123,7 @@ function sixthQuestion() {
     var correctAnswer = 11;
     var userScore = 0;
     for (let i = 0; i < 4; i++) {
-        var userInput7 = parseInt(prompt('Try to guess a number from 1 to 20: you have 4 attempts '));
+        var userInput7 = parseInt(prompt('Try to guess a number between 1-20: you have 4 attempts '));
         if (userInput7 > correctAnswer) {
 
             alert('Too High');
@@ -141,7 +141,10 @@ function sixthQuestion() {
 
 alert('The correct answer is: ' + correctAnswer);
 return userScore;
+
+
 }
+        
 sixthQuestion();
 
 function seventhQuestion() {
@@ -171,9 +174,13 @@ function seventhQuestion() {
 seventhQuestion();
 
 
+ 
+
 var userInput9 = confirm("DONE,Have a nice day!");
-if (userInput9) {
-    alert('Bye :)');
-} else {
-    alert('ok ');
-}
+ if(userInput9){
+     alert('Bye :)');
+ } else {
+     alert('ok ');
+ }
+
+
