@@ -24,7 +24,8 @@ ul {
     margin-right: 30px;
     margin-left: 30px;
     box-sizing: content-box;
-    border-radius: 3px;
+    list-style-type: square;
+
 }
 
 
@@ -34,5 +35,10 @@ ol {
     margin-right: 30px;
     margin-left: 30px;
     box-sizing: content-box;
-    border-radius: 3px;
+    list-style: decimal;
+
 }
+li {
+    padding: 20px;
+    text-align: left;
+  }

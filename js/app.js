@@ -2,21 +2,13 @@
 
 var userInput = prompt("Enter your name")
 alert("Welcome " + userInput + " to my gusseing game")
-<<<<<<< HEAD
 //console.log(userInput)
 
 var userInput1 = prompt("How are you feeling today? " + userInput);
 
-switch (userInput1) {
-
-=======
-
-
-var userInput1 = prompt("How are you feeling today? " + userInput);
 
 switch (userInput1) {
 
->>>>>>> a3ab50784ecbd85b282343849796754aaa151ebf
     case 'good':
     case 'great':
     case 'fine':
@@ -30,7 +22,7 @@ switch (userInput1) {
 function firstQuestion() {
     var userScore = 0;
     var userInput2 = prompt("Do I love reading ? answer (yes/no or y/n) ")
-    userInput2=userInput2.toLocaleLowerCase();
+    userInput2 = userInput2.toLocaleLowerCase();
     if (userInput2 === "yes" || userInput2 === "y") {
         alert("Great! you are right")
         userScore += 1;
@@ -51,7 +43,7 @@ firstQuestion();
 function secondQuestion() {
     var userScore = 0;
     var userInput3 = prompt("Do I love programming ? answer (yes/no or y/n) ")
-    userInput3=userInput3.toLocaleLowerCase();
+    userInput3 = userInput3.toLocaleLowerCase();
     if (userInput3 == "yes" || userInput3 == "y") {
         alert("Great! you are right")
         userScore += 1;
@@ -70,7 +62,7 @@ secondQuestion();
 function thirdQuestion() {
     var userScore = 0;
     var userInput4 = prompt("Am I a girl ? answer (yes/no or y/n) ")
-    userInput4=userInput4.toLocaleLowerCase();
+    userInput4 = userInput4.toLocaleLowerCase();
     if (userInput4 == "yes" || userInput4 == "y") {
         alert("Exactly,I`m a girl");
         userScore += 1;
@@ -85,17 +77,13 @@ function thirdQuestion() {
 
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> a3ab50784ecbd85b282343849796754aaa151ebf
 thirdQuestion();
 
 function forthQuestion() {
     var userScore = 0;
     var userInput5 = prompt("Did I graduated in 2017 ? answer (yes/no or y/n) ")
-    userInput5=userInput5.toLocaleLowerCase();
-    if (userInput5 == "yes" || userInput5== "y") {
+    userInput5 = userInput5.toLocaleLowerCase();
+    if (userInput5 == "yes" || userInput5 == "y") {
         alert("Wrong answer")
     }
     else if (userInput5 == "no" || userInput5 == "n") {
@@ -113,7 +101,7 @@ forthQuestion();
 function fifthQuestion() {
     var userScore = 0;
     var userInput6 = prompt("Do I want to take the master degree ? answer (yes/no or y/n) ")
-    userInput6=userInput6.toLocaleLowerCase();
+    userInput6 = userInput6.toLocaleLowerCase();
     if (userInput6 == "yes" || userInput6 == "y") {
         alert("Great! you are right");
         userScore += 1;
@@ -143,7 +131,6 @@ function sixthQuestion() {
 
             alert('Too low');
         } else if (userInput7 == correctAnswer) {
-<<<<<<< HEAD
 
             alert("That's Correct");
             userScore += 1;
@@ -151,17 +138,9 @@ function sixthQuestion() {
         }
     }
 
-=======
 
-            alert("That's Correct");
-            userScore += 1;
-            break;
-        }
-    }
-
->>>>>>> a3ab50784ecbd85b282343849796754aaa151ebf
-    alert('The correct answer is: ' + correctAnswer);
-    return userScore;
+alert('The correct answer is: ' + correctAnswer);
+return userScore;
 }
 sixthQuestion();
 
@@ -172,35 +151,29 @@ function seventhQuestion() {
         var userInput8 = parseInt(prompt('Try to guess a number from 0 to 100,you have only 6 attempts'));
 
         for (let j = 0; j < correctAnswer.length; j++) {
-<<<<<<< HEAD
             if (userInput8 == correctAns[j]) {
-=======
-            if (userInput8 == correctAnswer[j]) {
->>>>>>> a3ab50784ecbd85b282343849796754aaa151ebf
-                
-                alert("That's  Correct");
-                userScore += 1;
+                if (userInput8 == correctAnswer[j]) {
+
+                    alert("That's  Correct");
+                    userScore += 1;
+                }
             }
         }
-    }
 
-    alert('The correct answers are: ' + correctAnswer);
-    return userScore;
+        alert('The correct answers are: ' + correctAnswer);
+        return userScore;
+
+    }
+    alert('you final score is: ' + (firstQuestion() + secondQuestion() + thirdQuestion() + forthQuestion() + fifthQuestion() + sixthQuestion() + seventhQuestion()));
+
 
 }
-alert('you final score is: ' + (firstQuestion() + secondQuestion() + thirdQuestion() + forthQuestion() + fifthQuestion() + sixthQuestion() + seventhQuestion()));
-
-<<<<<<< HEAD
-
 seventhQuestion();
-=======
-seventhQuestion();
+
 
 var userInput9 = confirm("DONE,Have a nice day!");
- if(userInput9){
-     alert('Bye :)');
- } else {
-     alert('ok ');
- }
->>>>>>> a3ab50784ecbd85b282343849796754aaa151ebf
-
+if (userInput9) {
+    alert('Bye :)');
+} else {
+    alert('ok ');
+}
