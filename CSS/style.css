@@ -26,6 +26,11 @@ ul {
     box-sizing: content-box;
     list-style-type: square;
 
+<<<<<<< HEAD
+=======
+    list-style-type: square;
+
+>>>>>>> 5fe68fc3ba6507c3b5334842e83529fd4108fba3
     
 }
 
@@ -38,7 +43,10 @@ ol {
     box-sizing: content-box;
     list-style: decimal;
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 5fe68fc3ba6507c3b5334842e83529fd4108fba3
 }
 
 
