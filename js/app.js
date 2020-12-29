@@ -152,11 +152,11 @@ sixthQuestion();
 
 function seventhQuestion() {
   var userScore = 0;
-  var correctAns = [99, 85, 81, 73, 100, 30, 36, 74, 11, 62];
+  var correctAnswe = [99, 85, 81, 73, 100, 30, 36, 74, 11, 62];
   for (let i = 0; i < 6; i++){
-    var userGuess = parseInt(prompt('Try to guess a number from 0 to 100: you have 6 attempts'));
-    for (let j = 0; j < correctAns.length; j++){
-      if (userGuess === correctAns[j]){
+    var userInput8 = parseInt(prompt('Try to guess a number from 0 to 100: you have 6 attempts'));
+    for (let j = 0; j < correctAnswer.length; j++){
+      if (userInput8 == correctAnswer[j]){
         
         alert('That is Correct');
         userScore += 1;
@@ -167,7 +167,7 @@ function seventhQuestion() {
       break;
     }
   }
-  alert('The correct answers are: ' + correctAns);
+  alert('The correct answers are: ' + correctAnswer);
   return userScore;
 }
         
