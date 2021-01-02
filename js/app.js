@@ -1,10 +1,13 @@
 'use strict';
 var userScore = 0;
 
+
+
 function name1() {
     var userInput = prompt("Enter your name");
     alert("Welcome " + userInput + " to my gusseing game");
     var userInput1 = prompt("How are you feeling today [good / great / fine / not good ]? " + userInput);
+
 
     switch (userInput1) {
         case 'good':
@@ -136,40 +139,46 @@ sixthQuestion();
 
 function seventhQuestion() {
     var correctAnswer = [1, 2, 3, 5, 7, 9];
+
     var countAttempt = 0
     var continue1 = true
     while (countAttempt < 6 && continue1) {
         var userInput = parseInt(prompt('Try to guess primary number less than 20 ,you have only 6 attempts'));
-        for (let i =0; i< correctAnswer.length; i++){
-            
-                if (userInput == correctAnswer[i]) {
-                    alert("That's  Correct");
-                    continue1=false;
-                    userScore += 1;
-                    break;
-                }
-
+        for (let i = 0; i < 6; i++) {
+            if (userInput == correctAnswer[i]) {
+                alert("That's  Correct");
+                continue1 = false;
+                userScore += 1;
+                break;
             }
-            alert('The correct answers are: ' + correctAnswer);
-            countAttempt++
 
-        
+        }
+
+        alert('The correct answers are: ' + correctAnswer);
+        countAttempt++
+
+
     }//end while
-   
+
 
     alert('you final score is: ' + userScore);
 
-}//end fon
-
+}
 seventhQuestion();
 
-function bye() {
 
+function bye() {
     var userInput9 = confirm("DONE,Have a nice day!");
     if (userInput9) {
+
         alert('Bye :)');
     } else {
         alert('ok ');
     }
 }
+
+
 bye()
+
+
+
